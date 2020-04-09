@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+{% block sign_current %}active{% endblock %}
+{% block title %}Sign Up{% endblock %}
+{% block body %}
+<br>
+<center>
+    <h1>
+        Sign Up
+    </h1>
+</center>
+<hr>
+<center>
+    <form action="" method="POST" novalidate>
+        {{reg_form.hidden_tag()}}
+        <p>
+            {{reg_form.username(size=32, placeholder="Username:")}}
+        </p>
+        <p>
+            {{reg_form.email(size=32, placeholder="Email:")}}
+        </p>
+        <p>
+            {{reg_form.password(size=32, placeholder="Password:")}}
+        </p>
+        <p>
+            {{reg_form.password_conf(size=32, placeholder="Confirm Password:")}}
+        </p>
+        <p>
+            {{reg_form.submit()}}
+        </p>
+    </form>
+</center>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+{% block sign_current %}active{% endblock %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<br>
+<center>
+    <h1>
+        Login
+    </h1>
+</center>
+<hr>
+<center>
+    <form action="" method="POST" novalidate>
+        {{form.hidden_tag()}}
+        <p>
+            {{form.username(size=32, placeholder="Username:")}}
+        </p>
+        <p>
+            {{form.password(size=32, placeholder="Password:")}}
+        </p>
+        <p>
+            {{form.submit()}}
+        </p>
+    </form>
+</center>
+{% endblock %}
