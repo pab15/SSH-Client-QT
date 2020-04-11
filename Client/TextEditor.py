@@ -52,7 +52,7 @@ class TextEditor(QtCore.QObject):
         
     def save_host_button_clicked(self, client, password, file_name):
       contents = self.text_area.toPlainText()
-      with open('Saved-Files/' + self.file_name, 'w') as file:
+      with open('Saved-Files/' + self.name, 'w') as file:
         file.write(contents)
       self.window.statusBar().showMessage('Success!')
 

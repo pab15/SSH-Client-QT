@@ -173,14 +173,7 @@ QScrollArea {
     </property>
     <addaction name="actionDisconnect"/>
    </widget>
-   <widget class="QMenu" name="menuCommands">
-    <property name="title">
-     <string>Commands</string>
-    </property>
-    <addaction name="actionCommand_Prompt"/>
-   </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuCommands"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSave_Connection">
